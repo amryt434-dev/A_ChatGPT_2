@@ -14,8 +14,8 @@ async function send() {
   input.value = "";
 
   try {
-    let response = await fetch(
-      "https://YOUR_BACKEND_URL/chat",   // 👈 yahan apna Render backend URL
+    let response = await fetch("https://a-chatgpt-backend.onrender.com/chat", {
+      "https://a-chatgpt-backend.onrender.com",   // 👈 yahan apna Render backend URL
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
